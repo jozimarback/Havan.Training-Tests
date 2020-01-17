@@ -3,7 +3,8 @@ using Xunit;
 
 namespace Havan.Training_Tests.IntegrationTests
 {
-    public class UnitTest1
+    [Collection(nameof(IntegrationApiTestFixtureCollection))]
+    public class FixturesTest
     {
         [Fact]
         public void Test1()
