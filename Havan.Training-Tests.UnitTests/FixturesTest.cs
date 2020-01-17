@@ -1,10 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Xunit;
 
 namespace Havan.Training_Tests.UnitTests
 {
-    class FixturesTest
+    public class FixturesTest : IClassFixture<IntegrationTestFixture>
     {
+        private ServiceProvider _serviceProvide;
+        public FixturesTest(IntegrationTestFixture fixture)
+        {
+            _serviceProvide = fixture.ServiceProvider;
+        }
     }
 }
