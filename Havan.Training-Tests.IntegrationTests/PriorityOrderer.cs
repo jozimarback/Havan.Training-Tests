@@ -47,7 +47,6 @@ namespace Havan.Training_Tests.IntegrationTests
 
             result = new TValue();
             dictionary[key] = result;
-
             return result;
         }
     }
