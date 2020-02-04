@@ -1,13 +1,11 @@
-using System;
-using Xunit;
+﻿using Xunit;
 
 namespace Havan.Training_Tests.IntegrationTests
 {
     [Collection(nameof(IntegrationApiTestFixtureCollection))]
-    public class FixturesTest
+    public class OrderTest
     {
-        [Fact]
-        public void Test1()
+        public void Teste01()
         {
 
         }
