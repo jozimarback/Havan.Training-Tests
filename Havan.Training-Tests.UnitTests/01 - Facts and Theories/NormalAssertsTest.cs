@@ -1,4 +1,5 @@
 using Havan.CaixaEletronico.Domain;
+using System;
 using Xunit;
 
 namespace Havan.Training_Tests.UnitTests
@@ -36,6 +37,13 @@ namespace Havan.Training_Tests.UnitTests
             bool saqueEhValido = caixa.ValidaCedulasDisponiveis(valorDoSaque);
 
             Assert.True(saqueEhValido);
+        }
+
+        [Fact]
+        public void DeveGerarExcecao()
+        {
+            int valorDoSaque = 5;
+            Assert.Throws<Exception>(() => caixa.Saque(valorDoSaque));
         }
     }
 }

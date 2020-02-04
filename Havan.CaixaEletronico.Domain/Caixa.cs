@@ -32,6 +32,8 @@ namespace Havan.CaixaEletronico.Domain
                 cedulasSacadas.Add(Cedula.Dez);
                 valorRestanteASerSacado = valorRestanteASerSacado - Cedula.Dez;
             }
+            if (cedulasSacadas.Count == 0)
+                throw new System.Exception("Não há cedulas disponíveis para o valor solicitado.");
 
             return cedulasSacadas;
         }
