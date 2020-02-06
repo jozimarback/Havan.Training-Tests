@@ -1,4 +1,4 @@
-# Projeto dedicado ao treinamento de equipe havan com testes unitários e teste de integração
+# Projeto dedicado ao treinamento Havan Labs com testes unitários e teste de integração
 
 ## Unidade e Integração
 - Asserts
