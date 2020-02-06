@@ -7,8 +7,8 @@ namespace Havan.Training_Tests.UnitTests
 {
     public class MoqTests
     {
-        [Fact(DisplayName ="Saque sem retorno cedulas NSubstitute")]
-        public void SaqueContemNenhumaCedulasNSUb()
+        [Fact(DisplayName ="Mock saque con sucesso NSubstitute")]
+        public void Saque_Com_Sucesso_NSUb()
         {
             var caixa = Substitute.For<ICaixa>();
             int valorDoSaque = 50;
@@ -16,8 +16,8 @@ namespace Havan.Training_Tests.UnitTests
             caixa.Received(1);
         }
 
-        [Fact(DisplayName = "Saque sem retorno cedulas Moq")]
-        public void SaqueContemNenhumaCedulasMoq()
+        [Fact(DisplayName = "Mock saque com sucesso Moq")]
+        public void Saque_Com_Sucesso_Moq()
         {
             var caixa = new Mock<ICaixa>();
             int valorDoSaque = 50;
