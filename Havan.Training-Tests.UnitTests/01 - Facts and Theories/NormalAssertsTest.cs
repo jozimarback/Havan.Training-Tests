@@ -11,16 +11,17 @@ namespace Havan.Training_Tests.UnitTests
         [Fact]
         public void SaqueContemMenorNumeroDeCedulas()
         {
+            //Arrange
             int quantidadeDeCedulas = 3;
             int valorDoSaque = 80;
-
+            //Act
             var resultadoCedulas = caixa.Saque(valorDoSaque);
-
+            //Assert
             Assert.Equal(quantidadeDeCedulas, resultadoCedulas.Count);
         }
 
         [Fact]
-        public void SaqueComCedulasIndisponiveis()
+        public void Saque_Com_Cedulas_Indisponiveis()
         {
             int valorDoSaque = 45;
 
