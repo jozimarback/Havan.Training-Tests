@@ -7,6 +7,7 @@ namespace Havan.Training_Tests.UnitTests
     public class FluentAssertionsTest
     {
         [Fact(DisplayName ="Valores do modelo cedula estão corretos")]
+        [Trait("Categoria", "Cedula")]
         public void ValoresModeloCedulaEstaoCorretos()
         {
             Cedula.Cem.Should().Be(100);
@@ -17,6 +18,7 @@ namespace Havan.Training_Tests.UnitTests
         
 
         [Fact(DisplayName = "Intervalos de valores do modelo cedula estão corretos")]
+        [Trait("Categoria", "Cedula")]
         public void IntervalosValoresModeloCedulaEstaoCorretos()
         {
             Cedula.Cinquenta.Should().BeLessThan(Cedula.Cem);

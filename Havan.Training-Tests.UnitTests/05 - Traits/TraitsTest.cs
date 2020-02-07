@@ -11,9 +11,9 @@ namespace Havan.Training_Tests.UnitTests
         {
             _caixa = fixture.ServiceProvider.GetRequiredService<ICaixa>();
         }
-        [Fact]
-        [Trait("Categoria","Saque")]
-        public void SaqueContemMenorNumeroDeCedulas()
+        [Fact(DisplayName ="Saque contem numero de cedulas igual ao predito")]
+        [Trait("Operação","Saque")]
+        public void Saque_Contem_Numero_De_Cedulas_Igual_Ao_Predito()
         {
             //Arrange
             int quantidadeDeCedulas = 3;
